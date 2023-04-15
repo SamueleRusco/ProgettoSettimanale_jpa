@@ -19,8 +19,8 @@ public class UtenteRunner implements ApplicationRunner {
 		System.out.println("Run...");
 		utenteService.createFakeUser();
 		
-		Utente u1 = new Utente("samuele123", "samuele", "rusco", "samuele@gmail.com", null);
-		utenteService.insertUser(u1);
+		//Utente u1 = new Utente("samuele123", "samuele", "rusco", "samuele@gmail.com", null);
+		//utenteService.insertUser(u1);
 		
 		//userService.findAllUser().forEach(u -> System.out.println(u));
 		//User u = userService.findUserByID(3l);

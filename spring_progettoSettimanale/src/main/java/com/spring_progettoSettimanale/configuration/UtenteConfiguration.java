@@ -42,7 +42,7 @@ public class UtenteConfiguration {
 	@Scope("prototype")
 	public Utente paramsUser(Long id, String username, String nomeUtente, String cognome, String email, Prenotazione prenotazione ) {
 		
-		return new Utente(id, username, nomeUtente, cognome, email, prenotazione);
+		return new Utente();
 	}
 	
 	@Bean("FakeUser")
