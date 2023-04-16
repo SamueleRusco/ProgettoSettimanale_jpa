@@ -2,14 +2,14 @@ package com.spring_progettoSettimanale.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.ObjectProvider;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Service;
 
 import com.spring_progettoSettimanale.model.Prenotazione;
 import com.spring_progettoSettimanale.repository.PrenotazioneRepositoryDao;
-import com.spring_progettoSettimanale.repository.UtenteRepositoryDao;
+
 
 @Service
 public class PrenotazioneService {
@@ -24,16 +24,16 @@ public class PrenotazioneService {
 	
 	// JDBC method
 	
-	public void insertUser(Prenotazione e) {
+	public void insertPrenotazione(Prenotazione e) {
 		repo.save(e);
 		System.out.println("ho salvato");
 	}
 	
-	public Prenotazione findUserByID(Long id) {
+	public Prenotazione findPrenotazoneByID(Long id) {
 		return repo.findById(id).get();
 	}
 	
-	public List<Prenotazione> findAllUser() {
+	public List<Prenotazione> findAllPrenotazioni() {
 		return (List<Prenotazione>) repo.findAll();
 	}
 	
